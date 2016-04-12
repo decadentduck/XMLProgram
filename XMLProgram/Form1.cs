@@ -75,6 +75,18 @@ namespace XMLProgram
             // end the "student" element
             writer.WriteEndElement();
 
+            //Start "student" element
+            writer.WriteStartElement("student");
+
+            //Write sub-elements
+            writer.WriteElementString("name", "C");
+            writer.WriteElementString("address", "1313 Mockingbird Lane");
+            writer.WriteElementString("phone", "555-1313");
+            writer.WriteElementString("sex", "Female");
+
+            // end the "student" element
+            writer.WriteEndElement();
+
             // end the "Class" element
             writer.WriteEndElement();
 
